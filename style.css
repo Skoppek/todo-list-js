@@ -1,0 +1,94 @@
+body {
+    background-color: cornflowerblue;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    margin-top: max(5vw, 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(95vw, 800px);
+}
+
+button, input {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    border-bottom: 2px solid #0f4e79;
+    width: 80%;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #16689e;
+    box-shadow: .2rem .2rem black;
+    /* Uniemożliwienie zaznaczania tekstu na Chrome, Firefox, IE, Edge */
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+button:active {
+    background-color: #145986;
+    transform: translate(.1rem, .1rem);
+    box-shadow: .1rem .1rem black;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+.card {
+    width: 100%;
+    margin: .5rem;
+    border-radius: 15px 25px;
+    padding: 10px;
+    background-color: #227ebb;
+    font-size: min(5vw, 1.4rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: opacity 0.3s 0s;
+}
+
+.card-text {
+    overflow: auto;
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.removed {
+    opacity: 0;
+}
